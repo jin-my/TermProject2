@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/text_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="409dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        tools:layout_editor_absoluteX="1dp"-->
+<!--        tools:layout_editor_absoluteY="232dp" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="399dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@+id/imageIcon"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/List"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#0F4F4F4F"
+                        android:gravity="center"
+                        android:text="List"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+                    <RelativeLayout
+                        android:id="@+id/firstLin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/imageIcon"
+                                android:layout_width="180dp"
+                                android:layout_height="140dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="10dp"
+                                app:srcCompat="@color/colorAccent" />
+
+                            <LinearLayout
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:layout_toRightOf="@+id/imageIcon"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:id="@+id/name_tv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="47dp"
+                                    android:text="이름:  인하대학교 4호관"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/mail_tv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="47dp"
+                                    android:text="주소:  인천광역시 미추홀구 인하로 100, 4호관"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/tag_tv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="47dp"
+                                    android:text="#Tag:  #공간정보공학과 "
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="343dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/imageIcon"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="3dp">
+
+                                <TextView
+                                    android:id="@+id/content_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="이 곳은 제가 가장 아끼는 공간입니다.  큰 맘 먹고 공유하니 꼭 한 번 가보세요!"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/secondLin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/imageIcon2"
+                                android:layout_width="180dp"
+                                android:layout_height="140dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="10dp"
+                                app:srcCompat="@color/colorPrimary" />
+
+                            <LinearLayout
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:layout_toRightOf="@+id/imageIcon2"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:id="@+id/name2_tv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="47dp"
+                                    android:text="이름: "
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/mail2_tv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="47dp"
+                                    android:text="주소: "
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/tag2_tv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="47dp"
+                                    android:text="#Tag: "
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="343dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/imageIcon2"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="3dp">
+
+                                <TextView
+                                    android:id="@+id/content2_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="적극 추천합니다. 꼭 가보세요!!"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

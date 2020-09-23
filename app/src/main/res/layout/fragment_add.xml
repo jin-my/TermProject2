@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/text_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    <androidx.cardview.widget.CardView-->
+    <!--        android:layout_width="409dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        tools:layout_editor_absoluteX="1dp"-->
+    <!--        tools:layout_editor_absoluteY="232dp" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="55dp">
+
+                <LinearLayout
+                    android:layout_width="399dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@+id/imageIcon"
+                    android:orientation="vertical">
+
+                    <!--            <RelativeLayout-->
+                    <!--                android:id="@+id/firstLin"-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:background="#ffffff"-->
+                    <!--                android:orientation="vertical"-->
+                    <!--                android:padding="10dp">-->
+
+                    <!--            <RelativeLayout-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="wrap_content">-->
+
+                    <!--                    <ImageView-->
+                    <!--                        android:id="@+id/imageIcon"-->
+                    <!--                        android:layout_width="180dp"-->
+                    <!--                        android:layout_height="140dp"-->
+                    <!--                        android:layout_marginStart="10dp"-->
+                    <!--                        android:layout_marginLeft="10dp"-->
+                    <!--                        android:layout_marginTop="10dp"-->
+                    <!--                        android:layout_marginEnd="10dp"-->
+                    <!--                        android:layout_marginRight="10dp"-->
+                    <!--                        android:layout_marginBottom="10dp"-->
+                    <!--                        android:src="@mipmap/ic_launcher"-->
+                    <!--                        app:srcCompat="@color/colorAccent" />-->
+
+
+                    <TextView
+                        android:id="@+id/name_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="테마이름"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="이름을 입력하시오."
+                        android:inputType="textPersonName" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="30dp"
+                        android:fadingEdge="vertical" />
+
+                    <TextView
+                        android:id="@+id/mail_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="테마태그"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="태그를 입력하시오."
+                        android:inputType="textPersonName" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="30dp"
+                        android:fadingEdge="vertical" />
+
+                    <TextView
+                        android:id="@+id/tag_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="테마설명"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText3"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/textbox"
+                        android:ems="10"
+                        android:hint="설명을 입력하시오."
+                        android:inputType="textMultiLine|textNoSuggestions" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="30dp"
+                        android:fadingEdge="vertical" />
+
+                    <TextView
+                        android:id="@+id/image_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="icon 이미지 첨부"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:src="@mipmap/ic_launcher_round" />
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:text="이미지 불러오기" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="50dp"
+                        android:fadingEdge="vertical" />
+                    <!--            </RelativeLayout>-->
+                    <!--            </RelativeLayout>-->
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/button2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="취소"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <Button
+                            android:id="@+id/button3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="등록"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <!--        <LinearLayout-->
+                <!--            android:layout_width="343dp"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_below="@+id/imageIcon"-->
+                <!--            android:layout_marginStart="15dp"-->
+                <!--            android:layout_marginLeft="15dp"-->
+                <!--            android:layout_marginTop="3dp">-->
+
+                <!--                        <TextView-->
+                <!--                            android:id="@+id/content_tv"-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:text="이 곳은 제가 가장 아끼는 공간입니다.  큰 맘 먹고 공유하니 꼭 한 번 가보세요!"-->
+                <!--                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"-->
+                <!--                            android:textSize="15sp" />-->
+                <!--        </LinearLayout>-->
+
+
+                <!--        </LinearLayout>-->
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

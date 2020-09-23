@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/app_bar_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="테마검색"
+        app:actionViewClass="android.widget.SearchView" />
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_bookmark"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_study"
+            android:icon="@drawable/ic_mode_edit_black_24dp"
+            android:title="@string/menu_study" />
+        <item
+            android:id="@+id/nav_smork"
+            android:icon="@drawable/ic_smoking_rooms_black_24dp"
+            android:title="@string/menu_smork" />
+        <item
+            android:id="@+id/nav_pet"
+            android:icon="@drawable/ic_pets_black_24dp"
+            android:title="@string/menu_pet" />
+        <item
+            android:id="@+id/nav_brightness"
+            android:icon="@drawable/ic_brightness_3_black_24dp"
+            android:title="@string/menu_brightness" />
+        <item
+            android:id="@+id/nav_phone"
+            android:icon="@drawable/ic_smartphone_black_24dp"
+            android:title="@string/menu_phone" />
+        <item
+            android:id="@+id/nav_pregnant"
+            android:icon="@drawable/ic_pregnant_woman_black_24dp"
+            android:title="@string/menu_pregnant" />
+        <item
+            android:id="@+id/nav_walk"
+            android:icon="@drawable/ic_directions_walk_black_24dp"
+            android:title="@string/menu_walk" />
+        <item
+            android:id="@+id/nav_bike"
+            android:icon="@drawable/ic_directions_bike_black_24dp"
+            android:title="@string/menu_bike" />
+
+        <item
+            android:id="@+id/nav_beach"
+            android:icon="@drawable/ic_beach_access_black_24dp"
+            android:title="@string/menu_beach" />
+
+        <item
+            android:id="@+id/nav_add"
+            android:icon="@drawable/ic_add_circle_outline_black_24dp"
+            android:title="@string/menu_add" />
+
+    </group>
+
+
+</menu>
